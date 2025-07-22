@@ -1,9 +1,79 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Pill Tracker</title>
+  <title>Pill Tracker :) </title>
+  <link rel="stylesheet" href="style.css">
 
-  <h1>Hello World!</h1>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Patrick+Hand&family=Shrikhand&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <h1>Welcome!</h1>
+
+  <h2>Pill Tracker :)</h2>
+
+  <form id="pillForm">
+    <input type="text" id="pname" name="pname" placeholder="Pill Name" autofocus required>
+
+    <label for="amount">  Amount Per Day: </label>
+    <select name="amount" id="amount" required>
+      <option value="half a pill">half a pill</option>
+      <option value="1 pill">1 pill</option>
+      <option value="2 pills">2 pills</option>
+      <option value="3 pills">3 pills</option>
+      <option value="4 pills">4 pills</option>
+    </select>
+ 
+    <label for="frequency">  Frequency: </label>
+    <select name="frequency" id="frequency" required>
+      <option value="daily">Daily</option>
+      <option value="weekly">Weekly</option>
+      <option value="every-x-days">Every X days</option>
+      <option value="daily">As Needed</option>
+    </select>
+
+
+    <label for="weekday" style="display: none;">Weekday: </label>
+    <select name="weekday" id="weekday" style="display: none;">
+      <option value=" monday">Monday</option>
+      <option value=" tuesday">Tuesday</option>
+      <option value=" wednesday">Wednesday</option>
+      <option value=" thursday">thursday</option>
+      <option value=" friday">Friday</option>
+      <option value=" saturday">Saturday</option>
+      <option value=" sunday">Sunday</option>
+    </select>
+
+    <label for="numdays" style="display: none;">Number of Days: </label>
+    <select name="numdays" id="numdays" style="display: none;">
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+    </select>
+
+    <input type="time" id="time" name="time">
+
+    <input type="submit" value="Add">
+  </form>
+
+  <div id="response">
+    <ul id="pillList"></ul>
+  </div>
+
+  
+
+  <button id="clearTaken">Clear All</button>
+  <button id="clear">DELETE ALL</button>
+
+
+  <script src="script.js"></script>
+
+
+  <p>updates are still ongoing!</p>
   
 </body>
 </html>
