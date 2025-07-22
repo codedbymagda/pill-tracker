@@ -1,1 +1,1 @@
-# pill-tracker
+# Pill Tracker
